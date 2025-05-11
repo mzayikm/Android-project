@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1053374895369",
+    "project_id": "rakhesly",
+    "storage_bucket": "rakhesly.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053374895369:android:8772a343de122e3e542fd8",
+        "android_client_info": {
+          "package_name": "com.example.rakhesly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8T36KfVB6X9wc3rirhERXmISq2kSlnVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

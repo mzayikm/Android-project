@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/supermarketListFragment">
+
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.rakhesly.ui.cart.cartffragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.rakhesly.ui.cart.checkoutfragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout">
+        <action
+            android:id="@+id/action_checkoutFragment_to_orderConfirmationFragment"
+            app:destination="@id/orderConfirmationFragment"
+            app:popUpTo="@id/supermarketListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderConfirmationFragment"
+        android:name="com.example.rakhesly.ui.orders.OrderConfirmationFragment"
+        android:label="Order Confirmed"
+        tools:layout="@layout/fragment_order_confirmation" />
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.rakhesly.ui.orders.OrderListFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders">
+        <action
+            android:id="@+id/action_ordersFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.example.rakhesly.ui.orders.OrderDetailFragment"
+        android:label="Order Detail"
+        tools:layout="@layout/fragment_order_detail">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.example.rakhesly.ui.tracking.TrackingFragment"
+        android:label="Track Order"
+        tools:layout="@layout/fragment_tracking" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.rakhesly.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/supermarketListFragment"
+        android:name="com.example.rakhesly.ui.supermarkets.SupermarketListFragment"
+        android:label="Supermarkets"
+        tools:layout="@layout/fragment_supermarket_list">
+        <action
+            android:id="@+id/action_supermarketListFragment_to_supermarketDetailFragment"
+            app:destination="@id/supermarketDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supermarketDetailFragment"
+        android:name="com.example.rakhesly.ui.supermarkets.SupermarketDetailFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_supermarket_detail">
+        <argument
+            android:name="supermarketId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_supermarketDetailFragment_to_productListFragment"
+            app:destination="@id/productListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.rakhesly.ui.products.ProductListFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_product_list">
+        <argument
+            android:name="supermarketId"
+            app:argType="string" />
+        <argument
+            android:name="categoryName"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_productListFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.rakhesly.ui.products.productdetailfragment"
+        android:label="Product Detail"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="productId"
+            app:argType="string" />
+    </fragment>
+
+
+
+
+</navigation>

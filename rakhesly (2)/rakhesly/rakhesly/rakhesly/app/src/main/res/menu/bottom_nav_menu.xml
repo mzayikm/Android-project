@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/supermarketListFragment"
+        android:icon="@drawable/emoji_shop"
+        android:tint="@null"
+        android:title="Supermarkets" />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/emoji_cart"
+        android:tint="@null"
+        android:title="Cart" />
+
+    <item
+        android:id="@+id/ordersFragment"
+        android:icon="@drawable/colored_orders"
+        android:tint="@null"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/trackingFragment"
+        android:icon="@drawable/emoji_map"
+        android:tint="@null"
+        android:title="Tracking" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/emoji_person"
+        android:tint="@null"
+        android:title="Profile" />
+</menu>

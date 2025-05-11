@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fruits_vegetables" type="drawable">@drawable/fruitsvegetables</item>
+    <item name="dairy_eggs" type="drawable">@drawable/dairyeggs</item>
+    <item name="meat_poultry" type="drawable">@drawable/meatpoultry</item>
+    <item name="bakeryy" type="drawable">@drawable/bakery</item>
+    <item name="beveragess" type="drawable">@drawable/beverages</item>
+    <item name="category_snacks" type="drawable">@drawable/snackss</item>
+</resources>

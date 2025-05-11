@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_cart" type="id" />
+    <item name="imageViewLogo" type="id" />
+    <item name="textViewName" type="id" />
+    <item name="textViewDeliveryTime" type="id" />
+    <item name="textViewMinOrder" type="id" />
+    <item name="textViewDeliveryFee" type="id" />
+    <item name="textViewRating" type="id" />
+</resources>
